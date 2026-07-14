@@ -1,5 +1,4 @@
 import type {
-  ApprovalStatus,
   Booking,
   BookingStatus,
   BookingType,
@@ -114,11 +113,6 @@ export const vendors: Vendor[] = Array.from({ length: 30 }, (_, i) => ({
 }))
 
 // ── Bookings ──────────────────────────────────────────────────────────
-
-const BOOKING_TYPES: BookingType[] = ['flight', 'hotel', 'package', 'transfer', 'visa', 'insurance']
-const BOOKING_STATUSES: BookingStatus[] = ['confirmed', 'pending', 'cancelled', 'completed', 'on_hold']
-const PAYMENT_STATUSES: PaymentStatus[] = ['paid', 'partial', 'unpaid', 'refunded', 'overdue']
-const APPROVAL_STATUSES: ApprovalStatus[] = ['pending', 'approved', 'rejected']
 
 const SERVICE_NAMES: Record<BookingType, string[]> = {
   flight: ['Flight', 'Flight – Economy', 'Flight – Business'],

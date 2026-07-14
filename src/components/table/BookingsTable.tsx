@@ -8,7 +8,7 @@ import {
   type SortingState,
 } from '@tanstack/react-table'
 import type { Booking, BookingTab } from '@/types'
-import { formatDate, formatCurrency, cn } from '@/utils'
+import { formatDate, cn } from '@/utils'
 import { PAYMENT_STATUS_LABELS } from '@/constants'
 import { ActionMenu } from './ActionMenu'
 import {
@@ -21,7 +21,6 @@ import {
   FileText,
   ChevronDown,
   ArrowUpDown,
-  ListTodo,
   CheckCircle2,
   XCircle,
   Plus,
